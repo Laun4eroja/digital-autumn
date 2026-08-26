@@ -17,14 +17,7 @@ html {
 }
 
 :root {
-    /* --main: #22567C; */
-    /* --accent: #00A6EB; */
-
-
-
-    /* --main: #2747ff; */
-    /* --main: #2646fe; */
-    --main: #2c61ff;
+    --main: #22567C;
     --accent: #00A6EB;
 }
 
@@ -539,7 +532,7 @@ main {
 }
 
 .app__btn img {
-    border: 1px solid #22567C;
+    border: 1px solid var(--main);
     border-radius: 15px;
 }
 
@@ -753,7 +746,6 @@ main {
     transition: color .15s ease;
 }
 
-
 .concierge__contact:hover {
     color: var(--accent);
 }
@@ -894,7 +886,6 @@ main {
 
 
 .cta {
-    padding: 60px 0 120px;
     /* background: linear-gradient(180deg, #E7F3F6 50%, white 100%); */
 }
 
