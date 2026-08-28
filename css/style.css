@@ -367,6 +367,13 @@ main {
     width: 230px;
     background-color: rgba(255, 255, 255, .7);
     padding: 15px 0;
+    transition: all .1s ease-in;
+}
+
+.categories__list-item:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transform: translateY(-3px);
+    transition: all .1s ease-in;
 }
 
 .categories__list-item.active {
