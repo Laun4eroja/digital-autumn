@@ -453,6 +453,15 @@ main .popup {
     transition: all .4s ease-in;
 }
 
+.categories__card img {
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.categories__card:hover.categories__card img {
+    transform: scale(1.1);
+}
+
 .categories__card.hide {
     opacity: 0;
     transform: translateY(30px);
