@@ -27,6 +27,8 @@ body {
     color: var(--accent);
     font-weight: 400;
     line-height: 1.2;
+    background-color: #f5f7f9;
+
 }
 
 a {
@@ -55,7 +57,7 @@ li {
 }
 
 main {
-    background-color: var(--accent);
+    /* background-color: #f5f7f9; */
     color: #fff;
 }
 
@@ -74,6 +76,7 @@ main .popup {
 .title {
     font-size: clamp(24px, 3vw, 34px);
     font-weight: 700;
+    color: var(--accent);
 }
 
 .section {
@@ -152,7 +155,7 @@ main .popup {
 }
 
 .form__group {
-    color: var(--main);
+    color: var(--accent);
 }
 
 .label {
@@ -185,6 +188,7 @@ main .popup {
     padding: 10px 0 8px;
     border-bottom: 1px solid rgba(34, 86, 124, 0.3);
     line-height: 1.5;
+    color: var(--main);
 }
 
 .textarea::placeholder {
@@ -199,7 +203,7 @@ main .popup {
 }
 
 .form__agreement {
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .real-checkbox {
@@ -260,7 +264,7 @@ main .popup {
 .header {
     position: relative;
     height: 100vh;
-    background-image: url(./../images/header/bg.jpg);
+    /* background-image: url(./../images/header/bg.jpg);     */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -291,7 +295,7 @@ main .popup {
 }
 
 .header__logo {
-    max-width: 150px;
+    max-width: 170px;
     margin-bottom: 80px;
 }
 
@@ -300,7 +304,7 @@ main .popup {
 }
 
 .header__title {
-    color: #fff;
+    color: var(--accent);
     font-size: clamp(32px, 4vw, 54px);
     font-weight: 800;
     max-width: 730px;
@@ -311,9 +315,9 @@ main .popup {
 }
 
 .header__text {
-    color: #fff;
-    font-size: clamp(14px, 1.2vw, 20px);
-    font-weight: 300;
+    color: var(--accent);
+    font-size: clamp(16px, 1.2vw, 22px);
+    font-weight: 400;
     line-height: 1.5;
     max-width: 700px;
 }
@@ -330,7 +334,7 @@ main .popup {
 }
 
 .header__subtext p {
-    color: #fff;
+    color: var(--accent);
     font-size: clamp(12px, 3vw, 18px);
 }
 
@@ -368,12 +372,12 @@ main .popup {
 }
 
 .header__list-item__icon {
-    height: 54px;
-    width: 54px;
+    height: 40px;
+    width: 40px;
 }
 
 .header__list-item__text {
-    color: #fff;
+    color: var(--accent);
     font-size: clamp(12px, 1vw, 16px);
 
 }
@@ -394,6 +398,10 @@ main .popup {
     max-width: 600px;
 }
 
+.categories__title span {
+    color: var(--main);
+}
+
 .categories__list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -405,12 +413,13 @@ main .popup {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid rgba(255, 255, 255, .4);
+    border: 1px solid rgba(1, 12, 44, .4);
     border-radius: 15px;
     width: 230px;
-    background-color: rgba(255, 255, 255, .08);
+    background-color: rgba(255, 255, 255, .5);
     padding: 15px 0;
     transition: all .1s ease-in;
+    color: var(--accent);
 }
 
 .categories__list-item:hover {
@@ -458,25 +467,27 @@ main .popup {
 .categories__card img {
     max-width: 100%;
     height: auto;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.30) 0%, rgba(0, 0, 0, 0.30) 100%);
     border-radius: 20px;
 }
 
 .categories__card-disc {
     position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 15px;
+    left: 15px;
     z-index: 100;
-    font-size: 50px;
+    font-size: 30px;
     font-weight: 700;
     color: #fff;
-    width: 250px;
-    text-align: center;
+    text-align: left;
+    background-color: rgba(5, 27, 94, 0.5);
+    backdrop-filter: blur(4px);
+    padding: 10px 15px;
+    border-radius: 20px;
+    box-shadow: 0 14px 32px rgba(0, 0, 0, .25);
 }
 
 .categories__card-disc__spec {
-    font-size: 30px;
+    font-size: 22px;
 }
 
 .categories__card-name {
@@ -490,9 +501,12 @@ main .popup {
     color: #fff;
     width: 230px;
     text-align: center;
-    background: rgba(255, 255, 255, .3);
+    /* background: rgba(99, 151, 173, 0.6); */
+    background-color: rgba(5, 27, 94, 0.5);
+    backdrop-filter: blur(4px);
     border-radius: 10px;
-    padding: 7px 0;
+    padding: 10px 0;
+    box-shadow: 0 14px 32px rgba(0, 0, 0, .25);
 }
 
 
@@ -547,12 +561,12 @@ main .popup {
 }
 
 .app__btn img {
-    border: 1px solid rgba(255, 255, 255, .35);
+    border: 1px solid rgba(1, 12, 44, .4);;
     border-radius: 15px;
 }
 
 .app_qr {
-    width: 130px;
+    width: 100px;
 }
 
 
@@ -615,8 +629,9 @@ main .popup {
 .app__step-text {
     font-size: 15px;
     line-height: 1.2;
-    color: rgba(255, 255, 255, .85);
+    color: var(--accent);
     max-width: 460px;
+    opacity: .8;
 }
 
 
@@ -632,9 +647,27 @@ main .popup {
 .concierge__img {
     position: relative;
     max-width: 700px;
+    z-index: 100;
 }
 
-.concierge__img::after {
+.concierge__img img {
+    position: relative;
+    z-index: 100;
+}
+
+.concierge__img::before {
+    position: absolute;
+    z-index: 20;
+    content: '';
+    width: 400px;
+    height: 120%;
+    top: -5%;
+    left: -5%;
+    background: linear-gradient(90deg,rgba(0, 166, 235, .4) 0%, rgba(255, 255, 255, .4) 100%);
+    border-radius: 20px;
+}
+
+/* .concierge__img::after {
     position: absolute;
     content: '';
     top: 0;
@@ -642,7 +675,7 @@ main .popup {
     left: 0;
     right: 0;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.06) 0%, rgba(255, 255, 255, 0.02) 90%);
-}
+} */
 
 .concierge__img img {
     width: 100%;
@@ -659,9 +692,14 @@ main .popup {
     margin-bottom: 10px;
 }
 
+.concierge__title span {
+    color: var(--main);
+}
+
 .concierge__subtitle {
     font-size: clamp(16px, 1vw, 18px);
     font-weight: 700;
+    color: var(--accent);
 }
 
 .concierge__btn {
@@ -704,8 +742,11 @@ main .popup {
 }
 
 .concierge__list-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
     font-size: 16px;
-    color: #fff;
+    color: var(--accent);
 }
 
 .concierge__reg-title {
@@ -718,8 +759,21 @@ main .popup {
 .concierge__reg-text {
     font-size: 15px;
     line-height: 1.45;
-    color: rgba(255, 255, 255, .85);
+    color: var(--accent);
     margin: 0 0 18px;
+}
+
+.concierge__reg-wrapper {
+    display: flex;
+    gap: 30px;
+}
+
+.concierge__reg-icon {
+    background-color: var(--main);
+    border-radius: 50%;
+    padding: 10px;
+    width: 54px;
+    height: 54px;
 }
 
 .concierge__contacts {
@@ -743,7 +797,7 @@ main .popup {
     width: fit-content;
     font-size: 17px;
     font-weight: 700;
-    color: #fff;
+    color: var(--accent);
     transition: color .15s ease;
 }
 
@@ -771,10 +825,15 @@ main .popup {
     max-width: 370px;
 }
 
+.reviews__title span {
+    color: var(--main);
+}
+
 .reviews__cta-text {
     margin-bottom: 30px;
     font-weight: 700;
     font-size: 20px;
+    color: var(--accent);
 }
 
 .reviews__cta-btn {
@@ -818,8 +877,10 @@ main .popup {
 }
 
 .reviews__card-text {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 700;
+    color: var(--accent);
+    opacity: .8;
 }
 
 .reviews__card-author {
@@ -893,7 +954,8 @@ main .popup {
     text-align: center;
     font-size: clamp(16px, 1vw, 18px);
     font-weight: 700;
-    color: rgba(255, 255, 255, .85);
+    color: var(--accent);
+    opacity: .8;
 }
 
 .cta__btn {
@@ -931,7 +993,8 @@ main .popup {
     text-align: center;
     font-size: clamp(16px, 1vw, 18px);
     font-weight: 700;
-    color: rgba(255, 255, 255, .85);
+    color: var(--accent);
+    opacity: .8;
 }
 
 .faq__wrapper {
@@ -949,7 +1012,7 @@ main .popup {
     background-color: rgba(255, 255, 255, .06);
     border: 1px solid rgba(255, 255, 255, .18);
     border-radius: 22px;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, .25);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, .15);
     overflow: hidden;
     transition: box-shadow .3s ease, border-color .3s ease, transform .3s ease;
 }
@@ -979,7 +1042,7 @@ button.accordeon__item-title {
     font-size: clamp(16px, 1.6vw, 20px);
     font-weight: 700;
     line-height: 1.35;
-    color: #fff;
+    color: var(--accent);
     transition: color .2s ease;
 }
 
@@ -1000,13 +1063,13 @@ button.accordeon__item-title {
 }
 
 .accordeon__item-title .accordeon__icon path {
-    stroke: #fff;
+    stroke: var(--accent);
     stroke-width: 3;
     transition: stroke .2s ease;
 }
 
 button.accordeon__item-title:hover .accordeon__icon path {
-    stroke: #fff;
+    stroke: var(--accent);
 }
 
 button.accordeon__item-title.accordeon__item-title--active .accordeon__icon {
@@ -1014,7 +1077,7 @@ button.accordeon__item-title.accordeon__item-title--active .accordeon__icon {
 }
 
 button.accordeon__item-title.accordeon__item-title--active .accordeon__icon path {
-    stroke: #fff;
+    stroke: var(--main);
 }
 
 .accordeon__text {
@@ -1029,8 +1092,8 @@ button.accordeon__item-title.accordeon__item-title--active .accordeon__icon path
     padding-bottom: 22px;
     font-size: clamp(15px, 1.4vw, 17px);
     line-height: 1.6;
-    color: #fff;
-    opacity: .85;
+    color: var(--accent);
+    opacity: .8;
 }
 
 .accordeon__text.accordeon__text--visible {
@@ -1067,15 +1130,15 @@ button.accordeon__item-title.accordeon__item-title--active .accordeon__icon path
 
 .footer {
     padding: 40px 0;
-    background-color: var(--accent);
+    background-color: rgba(1, 12, 44, .8);
     color: #fff;
-    /* font-size: 16px; */
     font-size: clamp(14px, 1vw, 16px);
 }
 
 .footer__title {
     margin-bottom: 40px;
     text-align: center;
+    color: #fff;
 }
 
 .footer__wrapper {
