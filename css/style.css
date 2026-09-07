@@ -444,6 +444,7 @@ main .popup {
 .categories__card {
     position: relative;
     max-width: 250px;
+    max-height: 250px;
     display: block;
     border-radius: 20px;
     overflow: hidden;
