@@ -271,6 +271,7 @@ main .popup {
 }
 
 .header__wrapper {
+    height: 100vh;
     position: relative;
     z-index: 100;
     padding: 50px 0;
@@ -362,23 +363,26 @@ main .popup {
 .header__list {
     display: flex;
     align-items: center;
+    justify-content: space-around;
     gap: 30px;
 }
 
 .header__list-item {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 12px;
 }
 
 .header__list-item__icon {
-    height: 40px;
-    width: 40px;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: 50px;
 }
 
 .header__list-item__text {
     color: var(--accent);
-    font-size: clamp(12px, 1vw, 16px);
+    font-size: clamp(14px, 1vw, 16px);
 
 }
 
