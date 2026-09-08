@@ -80,6 +80,10 @@ main .popup {
     color: var(--accent);
 }
 
+.title span {
+    color: var(--main);
+}
+
 .section {
     padding: 100px 0;
 }
@@ -394,10 +398,6 @@ main .popup {
     max-width: 600px;
 }
 
-.categories__title span {
-    color: var(--caramel);
-}
-
 .categories__list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -544,10 +544,6 @@ main .popup {
     margin-bottom: 50px;
 }
 
-.app__title span {
-    color: var(--caramel);
-}
-
 .app__btns {
     display: flex;
     gap: 50px;
@@ -655,6 +651,10 @@ main .popup {
     align-items: center;
 }
 
+.concierge__title span {
+    color: var(--caramel);
+}
+
 .concierge__img {
     position: relative;
     max-width: 700px;
@@ -678,16 +678,6 @@ main .popup {
     border-radius: 20px;
 }
 
-/* .concierge__img::after {
-    position: absolute;
-    content: '';
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.06) 0%, rgba(255, 255, 255, 0.02) 90%);
-} */
-
 .concierge__img img {
     width: 100%;
     border-radius: 20px;
@@ -701,10 +691,6 @@ main .popup {
 
 .concierge__title {
     margin-bottom: 10px;
-}
-
-.concierge__title span {
-    color: var(--caramel);
 }
 
 .concierge__subtitle {
@@ -835,10 +821,6 @@ main .popup {
 .reviews__title {
     align-self: start;
     max-width: 370px;
-}
-
-.reviews__title span {
-    color: var(--caramel);
 }
 
 .reviews__cta-text {
