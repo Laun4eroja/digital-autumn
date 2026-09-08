@@ -19,6 +19,8 @@ html {
 :root {
     --main: #00A6EB;
     --accent: #010c2c;
+    --blue: #35477d;
+    --caramel: #b38446;
 }
 
 body {
@@ -28,7 +30,6 @@ body {
     font-weight: 400;
     line-height: 1.2;
     background-color: #f5f7f9;
-
 }
 
 a {
@@ -165,7 +166,7 @@ main .popup {
 }
 
 .input {
-    color: var(--main);
+    color: var(--caramel);
     width: 100%;
     display: block;
     padding: 5px 0 8px;
@@ -188,7 +189,7 @@ main .popup {
     padding: 10px 0 8px;
     border-bottom: 1px solid rgba(34, 86, 124, 0.3);
     line-height: 1.5;
-    color: var(--main);
+    color: var(--caramel);
 }
 
 .textarea::placeholder {
@@ -203,6 +204,7 @@ main .popup {
 }
 
 .form__agreement {
+    line-height: 1.4;
     font-size: 14px;
 }
 
@@ -215,7 +217,8 @@ main .popup {
 }
 
 .form__button {
-    background-color: var(--main);
+    background-color: rgba(5, 27, 94, 0.8);
+    backdrop-filter: blur(4px);
     border-radius: 15px;
     font-size: clamp(14px, 1vw, 16px);
     font-weight: 600;
@@ -232,10 +235,11 @@ main .popup {
     width: 20px;
     height: 20px;
     background: #fff;
-    border: 2px solid var(--main);
+    border: 2px solid var(--accent);
     border-radius: 4px;
     vertical-align: sub;
     margin-right: 5px;
+    line-height: 1.4;
 }
 
 .custom-checkbox::before {
@@ -262,37 +266,19 @@ main .popup {
 
 
 .header {
-    position: relative;
     height: 100vh;
-    /* background-image: url(./../images/header/bg.jpg);     */
+    background-image: url(./../images/header/bg.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .header__wrapper {
-    height: 100vh;
-    position: relative;
-    z-index: 100;
     padding: 50px 0;
     display: flex;
     flex-direction: column;
     gap: 30px;
     justify-content: space-between;
-}
-
-.header::after {
-    content: '';
-    position: absolute;
-    z-index: 10;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url(./../images/header/bg-phone.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center right;
 }
 
 .header__logo {
@@ -311,22 +297,23 @@ main .popup {
     max-width: 730px;
 }
 
-.header__title span {
-    color: var(--main);
-}
-
 .header__text {
     color: var(--accent);
     font-size: clamp(16px, 1.2vw, 22px);
-    font-weight: 400;
-    line-height: 1.5;
+    font-weight: 600;
+    line-height: 1.4;
     max-width: 700px;
+}
+
+.header__text span {
+    color: var(--caramel);
 }
 
 .header__subtext {
     display: flex;
     align-items: center;
     gap: 10px;
+    margin-bottom: 80px;
 }
 
 .header__subtext-icon {
@@ -345,7 +332,8 @@ main .popup {
 }
 
 .header__btn-link {
-    background-color: var(--main);
+    background-color: rgba(5, 27, 94, 0.8);
+    backdrop-filter: blur(4px);
     border-radius: 15px;
     /* font-size: 16px; */
     font-size: clamp(14px, 1vw, 20px);
@@ -403,7 +391,7 @@ main .popup {
 }
 
 .categories__title span {
-    color: var(--main);
+    color: var(--caramel);
 }
 
 .categories__list {
@@ -434,7 +422,8 @@ main .popup {
 
 .categories__list-item.active {
     border-color: #fff;
-    background-color: var(--main);
+    background-color: rgba(5, 27, 94, 0.8);
+    backdrop-filter: blur(4px);
     color: #fff;
 }
 
@@ -528,13 +517,15 @@ main .popup {
 
 .app__info {
     display: flex;
-    gap: 100px;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 30px;
 }
 
 .app__image {
     display: block;
     margin-top: -150px;
-    height: 650px;
+    height: 500px;
 }
 
 .app__image img {
@@ -548,13 +539,12 @@ main .popup {
 }
 
 .app__title span {
-    color: var(--main);
+    color: var(--caramel);
 }
 
 .app__btns {
-    margin-top: -100px;
     display: flex;
-    gap: 70px;
+    gap: 50px;
     align-items: center;
 }
 
@@ -565,22 +555,24 @@ main .popup {
     gap: 10px;
 }
 
+.app__store_wrapper span {
+    transition: all .1s ease-in;
+    border-radius: 15px;
+    color: var(--accent);
+}
+
 .app__btn {
     transition: all .1s ease-in;
     border-radius: 15px;
+    color: var(--accent);
 }
 
-.app__btn:hover {
-    transform: translateY(-2px);
-}
-
-.app__btn img {
-    border: 1px solid rgba(1, 12, 44, .4);;
-    border-radius: 15px;
+.app__store_wrapper:hover span{
+    color: var(--caramel);
 }
 
 .app_qr {
-    width: 100px;
+    width: 80px;
 }
 
 
@@ -592,7 +584,6 @@ main .popup {
     display: flex;
     flex-direction: column;
     gap: 22px;
-    max-width: 540px;
 }
 
 .app__step {
@@ -606,7 +597,8 @@ main .popup {
     width: 54px;
     height: 54px;
     border-radius: 16px;
-    background: var(--main);
+    background-color: rgba(5, 27, 94, 0.8);
+    backdrop-filter: blur(4px);
     color: #fff;
     display: flex;
     align-items: center;
@@ -637,14 +629,13 @@ main .popup {
     margin-bottom: 5px;
     font-size: 20px;
     font-weight: 700;
-    color: var(--main);
+    color: var(--caramel);
 }
 
 .app__step-text {
     font-size: 15px;
     line-height: 1.2;
     color: var(--accent);
-    max-width: 460px;
     opacity: .8;
 }
 
@@ -673,11 +664,11 @@ main .popup {
     position: absolute;
     z-index: 20;
     content: '';
-    width: 400px;
+    width: 450px;
     height: 120%;
     top: -5%;
     left: -5%;
-    background: linear-gradient(90deg,rgba(0, 166, 235, .4) 0%, rgba(255, 255, 255, .4) 100%);
+    background: linear-gradient(90deg, rgba(179, 132, 70, .5) 0%, rgba(255, 255, 255, .4) 100%);
     border-radius: 20px;
 }
 
@@ -707,7 +698,7 @@ main .popup {
 }
 
 .concierge__title span {
-    color: var(--main);
+    color: var(--caramel);
 }
 
 .concierge__subtitle {
@@ -744,7 +735,7 @@ main .popup {
 .concierge__lead {
     font-size: 22px;
     font-weight: 700;
-    color: var(--main);
+    color: var(--caramel);
     margin: 0 0 16px;
 }
 
@@ -766,7 +757,7 @@ main .popup {
 .concierge__reg-title {
     font-size: 22px;
     font-weight: 700;
-    color: var(--main);
+    color: var(--caramel);
     margin: 0 0 10px;
 }
 
@@ -783,7 +774,8 @@ main .popup {
 }
 
 .concierge__reg-icon {
-    background-color: var(--main);
+    background-color: rgba(5, 27, 94, 0.8);
+    backdrop-filter: blur(4px);
     border-radius: 50%;
     padding: 10px;
     width: 54px;
@@ -816,7 +808,7 @@ main .popup {
 }
 
 .concierge__contact:hover {
-    color: var(--main);
+    color: var(--caramel);
 }
 
 /* reviews */
@@ -840,7 +832,7 @@ main .popup {
 }
 
 .reviews__title span {
-    color: var(--main);
+    color: var(--caramel);
 }
 
 .reviews__cta-text {
@@ -854,7 +846,8 @@ main .popup {
     display: inline-block;
     border-radius: 15px;
     transition: all .1s ease-in;
-    background-color: var(--main);
+    background-color: rgba(5, 27, 94, 0.8);
+    backdrop-filter: blur(4px);
     border-radius: 15px;
     /* font-size: 16px; */
     font-size: clamp(14px, 1vw, 16px);
@@ -902,7 +895,7 @@ main .popup {
     justify-content: space-between;
     font-size: clamp(12px, 0.9vw, 14px);
     font-weight: 700;
-    color: var(--main);
+    color: var(--caramel);
 }
 
 .reviews__card {
@@ -979,7 +972,7 @@ main .popup {
 }
 
 .cta__btn a {
-    background-color: var(--main);
+    background-color: var(--blue);
     border-radius: 15px;
     /* font-size: 16px; */
     font-size: clamp(14px, 1vw, 16px);
@@ -1037,8 +1030,8 @@ main .popup {
 }
 
 .accordeon__item:has(.accordeon__item-title--active) {
-    border-color: rgba(0, 166, 235, .45);
-    box-shadow: 0 14px 34px rgba(0, 166, 235, .16);
+    border-color: rgba(179, 132, 70, .45);
+    box-shadow: 0 14px 34px rgba(179, 132, 70, .16);
 }
 
 button.accordeon__item-title {
@@ -1056,7 +1049,7 @@ button.accordeon__item-title {
     font-size: clamp(16px, 1.6vw, 20px);
     font-weight: 700;
     line-height: 1.35;
-    color: var(--accent);
+    color: var(--blue);
     transition: color .2s ease;
 }
 
@@ -1091,7 +1084,7 @@ button.accordeon__item-title.accordeon__item-title--active .accordeon__icon {
 }
 
 button.accordeon__item-title.accordeon__item-title--active .accordeon__icon path {
-    stroke: var(--main);
+    stroke: var(--caramel);
 }
 
 .accordeon__text {
