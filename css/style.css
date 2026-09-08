@@ -291,10 +291,14 @@ main .popup {
 }
 
 .header__title {
-    color: var(--accent);
+    color: var(--blue);
     font-size: clamp(32px, 4vw, 54px);
     font-weight: 800;
     max-width: 730px;
+}
+
+.header__title span {
+    color: var(--caramel);
 }
 
 .header__text {
