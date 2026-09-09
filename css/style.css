@@ -443,7 +443,7 @@ main .popup {
 .categories__card {
     position: relative;
     max-width: 250px;
-    max-height: 250px;
+    aspect-ratio: 1 / 1;
     display: block;
     border-radius: 20px;
     overflow: hidden;
@@ -484,7 +484,7 @@ main .popup {
     top: 15px;
     left: 15px;
     z-index: 100;
-    font-size: 30px;
+    font-size: clamp(18px, 2vw, 30px);
     font-weight: 700;
     color: #fff;
     text-align: left;
@@ -495,8 +495,8 @@ main .popup {
     box-shadow: 0 14px 32px rgba(0, 0, 0, .25);
 }
 
-.categories__card-disc__spec {
-    font-size: 22px;
+.categories__card-disc.categories__card-disc__spec {
+    font-size: clamp(16px, 2vw, 22px);
 }
 
 .categories__card-name {
@@ -505,7 +505,7 @@ main .popup {
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 100;
-    font-size: 20px;
+    font-size: clamp(14px, 1.5vw, 20px);
     font-weight: 700;
     color: #fff;
     width: 230px;
@@ -569,7 +569,7 @@ main .popup {
     color: var(--accent);
 }
 
-.app__store_wrapper:hover span{
+.app__store_wrapper:hover span {
     color: var(--caramel);
 }
 
@@ -1140,9 +1140,6 @@ button.accordeon__item-title.accordeon__item-title--active .accordeon__icon path
         gap: 20px;
     }
 
-    .categories__card-name {
-        background: initial;
-    }
 }
 
 @media (max-width: 1100px) {
@@ -1153,6 +1150,21 @@ button.accordeon__item-title.accordeon__item-title--active .accordeon__icon path
     .app__image {
         height: 600px;
         top: -45%;
+    }
+
+    /* .categories__cards {
+        gap: 15px;
+    } */
+}
+
+@media (max-width: 1030px) {
+    .categories__card:hover.categories__card img {
+        transform: none;
+    }
+
+    .categories__card-name {
+        top: 91.5%;
+        width: 250px;
     }
 }
 
@@ -1166,21 +1178,9 @@ button.accordeon__item-title.accordeon__item-title--active .accordeon__icon path
         max-width: 500px;
     }
 
-    .categories__list-item {
-        font-size: 16px;
-    }
-
-    .categories__card-disc {
-        font-size: 40px;
-    }
-
     .categories__card-disc__tutu {
         font-size: 24px;
         max-width: 200px;
-    }
-
-    .categories__card-name {
-        font-size: 18px;
     }
 
     .app__title {
@@ -1205,20 +1205,7 @@ button.accordeon__item-title.accordeon__item-title--active .accordeon__icon path
     }
 
     .categories__list {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    .categories__title {
-        max-width: 400px;
-    }
-
-    .categories__cards {
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-    }
-
-    .categories__card {
-        max-width: 260px;
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .categories__top {
@@ -1237,6 +1224,18 @@ button.accordeon__item-title.accordeon__item-title--active .accordeon__icon path
         padding: 80px 0;
     }
 
+    .categories__cards {
+        display: flex;
+        overflow-x: auto;
+        overflow-y: hidden;
+        gap: 16px;
+        padding: 10px;
+    }
+
+    .categories__card {
+        flex: 0 0 200px;
+    }
+
     .categories__list {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -1245,12 +1244,14 @@ button.accordeon__item-title.accordeon__item-title--active .accordeon__icon path
         font-size: 32px;
     }
 
+    .categories__top {
+        align-items: center;
+        text-align: center;
+    }
+
 }
 
 @media (max-width: 640px) {
-    .categories__card {
-        max-width: 220px;
-    }
 
     .categories__card-disc__tutu {
         font-size: 20px;
@@ -1271,16 +1272,20 @@ button.accordeon__item-title.accordeon__item-title--active .accordeon__icon path
 }
 
 @media (max-width: 520px) {
-    .categories__card {
-        max-width: 180px;
-    }
 
-    .categories__card-name {
-        font-size: 16px;
-    }
 
     .categories__card-disc {
         font-size: 28px;
+    }
+
+    .categories__list {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+
+    .categories__list-item {
+        max-width: 140px;
+        font-size: 14px;
     }
 
     .categories__card-disc__tutu {
@@ -1314,12 +1319,7 @@ button.accordeon__item-title.accordeon__item-title--active .accordeon__icon path
     }
 
     .categories__list {
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .categories__list-item {
-        max-width: 170px;
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .categories__card-disc__tutu {
@@ -1343,18 +1343,6 @@ button.accordeon__item-title.accordeon__item-title--active .accordeon__icon path
 @media (max-width: 400px) {
     .categories__list {
         gap: 10px;
-    }
-
-    .categories__card {
-        max-width: 140px;
-    }
-
-    .categories__list-item {
-        max-width: 150px;
-    }
-
-    .categories__card-name {
-        font-size: 14px;
     }
 
     .app__image {
