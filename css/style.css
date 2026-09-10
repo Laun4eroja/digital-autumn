@@ -1502,6 +1502,23 @@ button.accordeon__item-title.accordeon__item-title--active .accordeon__icon path
         width: 160px;
     }
 
+    .concierge__info {
+        gap: 20px;
+    }
+
+    .concierge__lead,
+    .concierge__reg-title {
+        margin-bottom: 10px;
+    }
+
+    .concierge__list {
+        gap: 5px;
+    }
+
+    .concierge__reg-text {
+        margin-bottom: 10px;
+    }
+
 }
 
 @media (max-width: 480px) {
