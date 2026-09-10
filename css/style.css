@@ -1399,6 +1399,9 @@ button.accordeon__item-title.accordeon__item-title--active .accordeon__icon path
         font-size: 14px;
     }
 
+    .form {
+        text-align: right;
+    }
 }
 
 @media (max-width: 520px) {
@@ -1498,6 +1501,16 @@ button.accordeon__item-title.accordeon__item-title--active .accordeon__icon path
         margin-bottom: 10px;
     }
 
+    .form {
+        gap: 10px;
+    }
+    .popup-content {
+        max-width: 380px;
+    }
+
+    .popup__title {
+        font-size: 25px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -1539,13 +1552,14 @@ button.accordeon__item-title.accordeon__item-title--active .accordeon__icon path
         width: 22px;
         height: 22px;
     }
+
     .reviews__left,
     .reviews__cta-text {
         gap: 20px;
     }
 }
 
-@media (max-width: 412px) {
+@media (max-width: 415px) {
     .categories__list {
         gap: 10px;
     }
@@ -1553,10 +1567,19 @@ button.accordeon__item-title.accordeon__item-title--active .accordeon__icon path
     .concierge__contact {
         font-size: 12px;
     }
-.reviews__cards {
-    gap: 20px;
-}
+
+    .reviews__cards {
+        gap: 20px;
+    }
+
     .reviews__card-text {
-        font-size: 12px;
+        font-size: 13px;
+    }
+
+    .popup-content {
+        max-width: 320px;
+    }
+    .popup-content {
+        padding: 20px;
     }
 }
