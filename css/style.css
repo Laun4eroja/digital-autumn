@@ -1375,6 +1375,10 @@ button.accordeon__item-title.accordeon__item-title--active .accordeon__icon path
     .reviews__card-text {
         text-align: start;
     }
+
+    .form {
+        text-align: start !important;
+    }
 }
 
 @media (max-width: 640px) {
