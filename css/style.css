@@ -614,7 +614,7 @@ main .popup {
 
 .app__step-body {
     position: relative;
-    padding-top: 4px;
+    line-height: 1;
 }
 
 .app__step-num {
@@ -1148,8 +1148,7 @@ button.accordeon__item-title.accordeon__item-title--active .accordeon__icon path
     }
 
     .app__image {
-        height: 600px;
-        top: -45%;
+        height: 400px;
     }
 
     /* .categories__cards {
@@ -1191,11 +1190,6 @@ button.accordeon__item-title.accordeon__item-title--active .accordeon__icon path
         max-width: 140px;
         border-radius: 10px;
     }
-
-    .app__image {
-        height: 500px;
-        top: -40%;
-    }
 }
 
 @media (max-width: 840px) {
@@ -1212,10 +1206,16 @@ button.accordeon__item-title.accordeon__item-title--active .accordeon__icon path
         margin-bottom: 40px;
     }
 
+    .app__info {
+        flex-direction: column;
+    }
+
     .app__image {
-        height: 400px;
-        top: -60%;
-        left: 60%;
+        margin-top: 0;
+    }
+
+    .app__steps {
+        max-width: 560px;
     }
 }
 
@@ -1249,6 +1249,30 @@ button.accordeon__item-title.accordeon__item-title--active .accordeon__icon path
         text-align: center;
     }
 
+    .title {
+        text-align: center;
+    }
+
+    .app__title {
+        max-width: 600px;
+        margin: 0 auto;
+        margin-bottom: 40px;
+    }
+
+    .app__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .app__info {
+        align-items: center;
+    }
+
+    .app__steps {
+        gap: 15px;
+    }
 }
 
 @media (max-width: 640px) {
@@ -1257,18 +1281,10 @@ button.accordeon__item-title.accordeon__item-title--active .accordeon__icon path
         font-size: 20px;
     }
 
-    .app__title {
-        max-width: 250px;
+    .categories__top {
+        margin-bottom: 30px;
     }
 
-    .app__btns {
-        flex-direction: column;
-        align-items: start;
-    }
-
-    .app__image {
-        top: -35%;
-    }
 }
 
 @media (max-width: 520px) {
@@ -1293,23 +1309,40 @@ button.accordeon__item-title.accordeon__item-title--active .accordeon__icon path
     }
 
     .section {
-        padding: 60px 0;
+        padding: 50px 0;
     }
 
-    .app__title {
-        margin-bottom: 30px;
-    }
-
-    .app__image {
-        height: 300px;
-    }
-
-    .app__btns {
-        gap: 10px;
-    }
 
     .app__btn img {
         max-width: 120px;
+    }
+
+    .app__step {
+        gap: 10px;
+    }
+
+    .app__step-title {
+        font-size: 18px;
+    }
+
+    .app__step-text {
+        font-size: 13px;
+    }
+
+    .app__image {
+        height: 284px;
+    }
+
+    .app__btns {
+        gap: 30px;
+    }
+
+    .app__store_wrapper {
+        font-size: 16px;
+    }
+
+    .app__info {
+        margin-bottom: 10px;
     }
 }
 
@@ -1327,17 +1360,10 @@ button.accordeon__item-title.accordeon__item-title--active .accordeon__icon path
         max-width: 170px;
     }
 
-    .app__btns {
-        flex-direction: row;
+    .app_qr {
+        width: 70px;
     }
 
-    .app__image {
-        top: -50%;
-    }
-
-    .app__title {
-        max-width: 450px;
-    }
 }
 
 @media (max-width: 400px) {
@@ -1345,22 +1371,10 @@ button.accordeon__item-title.accordeon__item-title--active .accordeon__icon path
         gap: 10px;
     }
 
-    .app__image {
-        height: 250px;
-    }
+
 }
 
 /* app steps & store — responsive */
-
-@media (max-width: 1100px) {
-    .app__step-title {
-        font-size: 18px;
-    }
-
-    .app__step-text {
-        font-size: 14px;
-    }
-}
 
 @media (max-width: 840px) {
     .app__store {
@@ -1369,10 +1383,7 @@ button.accordeon__item-title.accordeon__item-title--active .accordeon__icon path
 }
 
 @media (max-width: 720px) {
-    .app__steps {
-        gap: 18px;
-        margin-bottom: 30px;
-    }
+
 
     .app__step-icon {
         width: 48px;
@@ -1396,25 +1407,17 @@ button.accordeon__item-title.accordeon__item-title--active .accordeon__icon path
         width: 160px;
     }
 
-    .app__store .app__btns {
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
 }
 
 @media (max-width: 480px) {
     .app__step-icon {
-        width: 44px;
-        height: 44px;
+        width: 40px;
+        height: 40px;
         border-radius: 12px;
     }
 
     .app__step-icon svg {
         width: 22px;
         height: 22px;
-    }
-
-    .app__step-num {
-        font-size: 12px;
     }
 }
