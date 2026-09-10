@@ -814,6 +814,7 @@ main .popup {
 .reviews__left {
     max-width: 400px;
     display: flex;
+    gap: 30px;
     flex-direction: column;
     justify-content: space-between;
 }
@@ -1233,6 +1234,14 @@ button.accordeon__item-title.accordeon__item-title--active .accordeon__icon path
     .concierge__img::before {
         display: none;
     }
+
+    .reviews__wrapper {
+        flex-direction: column;
+    }
+
+    .reviews__card-text {
+        font-size: 16px;
+    }
 }
 
 
@@ -1270,6 +1279,14 @@ button.accordeon__item-title.accordeon__item-title--active .accordeon__icon path
     .concierge__reg-title {
         font-size: 20px;
     }
+
+    .app__store {
+        gap: 20px;
+    }
+
+    .reviews__cards {
+        gap: 30px;
+    }
 }
 
 @media (max-width: 720px) {
@@ -1284,9 +1301,7 @@ button.accordeon__item-title.accordeon__item-title--active .accordeon__icon path
     .concierge__img {
         max-width: 450px;
     }
-}
 
-@media (max-width: 720px) {
     .section {
         padding: 80px 0;
     }
@@ -1340,6 +1355,26 @@ button.accordeon__item-title.accordeon__item-title--active .accordeon__icon path
     .app__steps {
         gap: 15px;
     }
+
+    .app__step-icon {
+        width: 48px;
+        height: 48px;
+        border-radius: 14px;
+    }
+
+    .app__step-icon svg {
+        width: 24px;
+        height: 24px;
+    }
+
+    .reviews__wrapper {
+        align-items: center;
+        text-align: center;
+    }
+
+    .reviews__card-text {
+        text-align: start;
+    }
 }
 
 @media (max-width: 640px) {
@@ -1350,6 +1385,18 @@ button.accordeon__item-title.accordeon__item-title--active .accordeon__icon path
 
     .categories__top {
         margin-bottom: 30px;
+    }
+
+    .reviews__cards {
+        grid-template-columns: 1fr;
+    }
+
+    .reviews__cta-text {
+        font-size: 18px;
+    }
+
+    .reviews__card-text {
+        font-size: 14px;
     }
 
 }
@@ -1425,6 +1472,31 @@ button.accordeon__item-title.accordeon__item-title--active .accordeon__icon path
         font-size: 15px;
     }
 
+    .app__store {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .app__qr {
+        width: 160px;
+    }
+
+    .concierge__info {
+        gap: 20px;
+    }
+
+    .concierge__lead,
+    .concierge__reg-title {
+        margin-bottom: 10px;
+    }
+
+    .concierge__list {
+        gap: 5px;
+    }
+
+    .concierge__reg-text {
+        margin-bottom: 10px;
+    }
 
 }
 
@@ -1456,6 +1528,21 @@ button.accordeon__item-title.accordeon__item-title--active .accordeon__icon path
         width: 16px;
         height: 16px;
     }
+
+    .app__step-icon {
+        width: 40px;
+        height: 40px;
+        border-radius: 12px;
+    }
+
+    .app__step-icon svg {
+        width: 22px;
+        height: 22px;
+    }
+    .reviews__left,
+    .reviews__cta-text {
+        gap: 20px;
+    }
 }
 
 @media (max-width: 412px) {
@@ -1466,70 +1553,10 @@ button.accordeon__item-title.accordeon__item-title--active .accordeon__icon path
     .concierge__contact {
         font-size: 12px;
     }
-
+.reviews__cards {
+    gap: 20px;
 }
-
-/* app steps & store — responsive */
-
-@media (max-width: 840px) {
-    .app__store {
-        gap: 20px;
-    }
-}
-
-@media (max-width: 720px) {
-
-
-    .app__step-icon {
-        width: 48px;
-        height: 48px;
-        border-radius: 14px;
-    }
-
-    .app__step-icon svg {
-        width: 24px;
-        height: 24px;
-    }
-}
-
-@media (max-width: 520px) {
-    .app__store {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .app__qr {
-        width: 160px;
-    }
-
-    .concierge__info {
-        gap: 20px;
-    }
-
-    .concierge__lead,
-    .concierge__reg-title {
-        margin-bottom: 10px;
-    }
-
-    .concierge__list {
-        gap: 5px;
-    }
-
-    .concierge__reg-text {
-        margin-bottom: 10px;
-    }
-
-}
-
-@media (max-width: 480px) {
-    .app__step-icon {
-        width: 40px;
-        height: 40px;
-        border-radius: 12px;
-    }
-
-    .app__step-icon svg {
-        width: 22px;
-        height: 22px;
+    .reviews__card-text {
+        font-size: 12px;
     }
 }
