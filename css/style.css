@@ -1587,3 +1587,35 @@ button.accordeon__item-title.accordeon__item-title--active .accordeon__icon path
         padding: 20px;
     }
 }
+
+/* Отключаем hover-эффекты на устройствах без мышки (сенсорные экраны) */
+@media (hover: none) {
+    .header__btn-link:hover,
+    .categories__list-item:hover,
+    .concierge__btn:hover,
+    .reviews__cta-btn:hover {
+        box-shadow: none;
+        transform: none;
+    }
+
+    .categories__card:hover.categories__card img {
+        transform: none;
+    }
+
+    .app__store_wrapper:hover span {
+        color: inherit;
+    }
+
+    .concierge__contact:hover {
+        color: var(--accent);
+    }
+
+    .accordeon__item:hover {
+        box-shadow: 0 8px 24px rgba(0, 0, 0, .15);
+        transform: none;
+    }
+
+    button.accordeon__item-title:hover .accordeon__icon path {
+        stroke: var(--accent);
+    }
+}
