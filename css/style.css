@@ -1131,7 +1131,11 @@ button.accordeon__item-title.accordeon__item-title--active .accordeon__icon path
 
 
 
-
+@media (max-width: 1270px) {
+    .concierge__img {
+        max-width: 600px;
+    }
+}
 
 
 
@@ -1140,6 +1144,9 @@ button.accordeon__item-title.accordeon__item-title--active .accordeon__icon path
         gap: 20px;
     }
 
+    .concierge__img {
+        max-width: 500px;
+    }
 }
 
 @media (max-width: 1100px) {
@@ -1151,9 +1158,13 @@ button.accordeon__item-title.accordeon__item-title--active .accordeon__icon path
         height: 400px;
     }
 
-    /* .categories__cards {
-        gap: 15px;
-    } */
+    .concierge__img {
+        max-width: 400px;
+    }
+
+    .concierge__info {
+        gap: 30px;
+    }
 }
 
 @media (max-width: 1030px) {
@@ -1190,7 +1201,40 @@ button.accordeon__item-title.accordeon__item-title--active .accordeon__icon path
         max-width: 140px;
         border-radius: 10px;
     }
+
+    .concierge__wrapper {
+        gap: 30px;
+    }
+
+    .concierge__reg-wrapper {
+        gap: 10px;
+    }
+
+    .concierge__reg-icon {
+        height: 40px;
+        width: 40px;
+    }
+
+    .concierge__list-item svg {
+        width: 18px;
+        height: 18px;
+    }
+
+    .concierge__img {
+        overflow: hidden;
+        max-width: 300px;
+    }
+
+    .concierge__img img {
+        width: auto;
+        height: 350px;
+    }
+
+    .concierge__img::before {
+        display: none;
+    }
 }
+
 
 @media (max-width: 840px) {
     .categories__top {
@@ -1216,6 +1260,29 @@ button.accordeon__item-title.accordeon__item-title--active .accordeon__icon path
 
     .app__steps {
         max-width: 560px;
+    }
+
+    .concierge__wrapper {
+        gap: 20px;
+    }
+
+    .concierge__lead,
+    .concierge__reg-title {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 720px) {
+    .concierge__wrapper {
+        flex-direction: column;
+    }
+
+    .concierge__img {
+        order: 1;
+    }
+
+    .concierge__img {
+        max-width: 450px;
     }
 }
 
@@ -1321,11 +1388,15 @@ button.accordeon__item-title.accordeon__item-title--active .accordeon__icon path
         gap: 10px;
     }
 
-    .app__step-title {
+    .app__step-title,
+    .concierge__lead,
+    .concierge__reg-title {
         font-size: 18px;
     }
 
-    .app__step-text {
+    .app__step-text,
+    .concierge__list-item,
+    .concierge__reg-text {
         font-size: 13px;
     }
 
@@ -1344,6 +1415,17 @@ button.accordeon__item-title.accordeon__item-title--active .accordeon__icon path
     .app__info {
         margin-bottom: 10px;
     }
+
+
+    .concierge__img {
+        display: none;
+    }
+
+    .concierge__contact {
+        font-size: 15px;
+    }
+
+
 }
 
 @media (max-width: 480px) {
@@ -1364,13 +1446,26 @@ button.accordeon__item-title.accordeon__item-title--active .accordeon__icon path
         width: 70px;
     }
 
+    .concierge__reg-icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    .concierge__reg-icon svg {
+        transform: translate(-18%, -24%);
+        width: 16px;
+        height: 16px;
+    }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 412px) {
     .categories__list {
         gap: 10px;
     }
 
+    .concierge__contact {
+        font-size: 12px;
+    }
 
 }
 
