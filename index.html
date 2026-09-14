@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
   <link rel="icon" type="image/x-icon" href="./images/favicon/favicon.ico">
   <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/favicon.ico">
@@ -567,11 +568,6 @@
 
           <div class="reviews__left">
             <h2 class="reviews__title title">Почему сотрудники выбирают Prime<span>Zone</span></h2>
-            <div class="reviews__cta">
-              <p class="reviews__cta-text">Поделитесь своим мнением<br>или оставьте пожелания
-              </p>
-              <button class="reviews__cta-btn" id="openBtn">Оставить отзыв</button>
-            </div>
           </div>
 
           <div id="myPopup" class="popup">
@@ -612,47 +608,98 @@
             </div>
           </div>
 
-          <div class="reviews__cards">
-            <div class="reviews__card">
-              <p class="reviews__card-text">
-                «Пользуюсь PrimeZone почти каждую неделю - продукты, доставка, рестораны. По отдельности скидки
-                небольшие, но за месяц получается ощутимая экономия»
-              </p>
-              <div class="reviews__card-author">
-                <p class="reviews__card-author__name">Мария С.</p>
-                <p class="reviews__card-author__prof">HR-менеджер</p>
+
+
+          <div class="swiper reviews__swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div class="reviews__card">
+                  <p class="reviews__card-text">
+                    «Поехал на выходные в Петербург и решил проверить, сколько получится сэкономить с PrimeZone. В YES
+                    Marata получил скидку 17% около 3 000 ₽ на проживании. Утром позавтракал в Nothing Fancy и
+                    сэкономил
+                    ещё примерно 600 ₽, а вечером встретились с друзьями в Jager Meet to eat ещё около 2 500 ₽ выгоды.
+                    Итого за одни выходные около 6 100 ₽ экономии»
+                  </p>
+                  <div class="reviews__card-author">
+                    <p class="reviews__card-author__name">Артем К.</p>
+                    <p class="reviews__card-author__prof">Руководитель проектов</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="reviews__card">
+                  <p class="reviews__card-text">
+                    «PrimeZone полезен не только мне. Пользуемся предложениями всей семьей - рестораны, развлечения,
+                    покупки и поездки. В итоге экономия действительно чувствуется»
+                  </p>
+                  <div class="reviews__card-author">
+                    <p class="reviews__card-author__name">Александр С.</p>
+                    <p class="reviews__card-author__prof">Ведущий инженер</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="reviews__card">
+                  <p class="reviews__card-text">
+                    «Когда хочется выбраться семьей за город, просто пишу в консьерж-сервис. Помогают подобрать
+                    варианты
+                    отдыха под наши пожелания, не приходится самостоятельно пересматривать десятки отелей»
+                  </p>
+                  <div class="reviews__card-author">
+                    <p class="reviews__card-author__name">Елена М.</p>
+                    <p class="reviews__card-author__prof">Директор по развитию</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="reviews__card">
+                  <p class="reviews__card-text">
+                    «Покупала маме новый телевизор и перед заказом решила проверить PrimeZone. Нашла предложение на
+                    Haier и в итоге получила дополнительную выгоду буквально на одной покупке»
+                  </p>
+                  <div class="reviews__card-author">
+                    <p class="reviews__card-author__name">Ирина Л.</p>
+                    <p class="reviews__card-author__prof">Финансовый менеджер</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="reviews__card">
+                  <p class="reviews__card-text">
+                    «ДМС закрывает далеко не всё, поэтому регулярно смотрю предложения PrimeZone по медицине. Анализы,
+                    диагностика, МРТ - выбор большой, причём варианты находятся и рядом с офисом, и рядом с домом.
+                    Получается заметно доступнее»
+                  </p>
+                  <div class="reviews__card-author">
+                    <p class="reviews__card-author__name">Мария Т.</p>
+                    <p class="reviews__card-author__prof">Руководитель направления</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="reviews__card">
+                  <p class="reviews__card-text">
+                    «Мне нравится, что не нужно заранее знать, что именно искать. Иногда просто открываю PrimeZone
+                    перед
+                    выходными и нахожу идеи - куда сходить, что попробовать или чем заняться с семьей»
+                  </p>
+                  <div class="reviews__card-author">
+                    <p class="reviews__card-author__name">Наталья К.</p>
+                    <p class="reviews__card-author__prof">Старший аналитик</p>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="reviews__card">
-              <p class="reviews__card-text">
-                «Перед поездкой написал в консьерж-сервис. Мне подобрали варианты и помогли с бронированием - не
-                пришлось самому тратить время на поиск»
-              </p>
-              <div class="reviews__card-author">
-                <p class="reviews__card-author__name">Андрей К.</p>
-                <p class="reviews__card-author__prof">Руководитель отдела</p>
-              </div>
-            </div>
-            <div class="reviews__card">
-              <p class="reviews__card-text">
-                «Нравится, что всё собрано в одном месте. Открываю приложение перед покупкой и сразу проверяю, есть ли
-                скидка или специальное предложение»
-              </p>
-              <div class="reviews__card-author">
-                <p class="reviews__card-author__name">Дмитрий К.</p>
-                <p class="reviews__card-author__prof">Финансовый аналитик</p>
-              </div>
-            </div>
-            <div class="reviews__card">
-              <p class="reviews__card-text">
-                «PrimeZone полезен не только мне. Используем предложения всей семьей - рестораны, развлечения, покупки и
-                поездки. В итоге экономия действительно чувствуется»
-              </p>
-              <div class="reviews__card-author">
-                <p class="reviews__card-author__name">Александр С.</p>
-                <p class="reviews__card-author__prof">Ведущий инженер</p>
-              </div>
-            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+          </div>
+          <div class="reviews__cta">
+            <p class="reviews__cta-text">Поделитесь своим мнением<br>или оставьте пожелания
+            </p>
+            <button class="reviews__cta-btn" id="openBtn">Оставить отзыв</button>
           </div>
         </div>
       </div>
@@ -893,7 +940,7 @@
       </div>
     </div>
   </footer>
-
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 

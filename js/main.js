@@ -103,20 +103,52 @@ popup.addEventListener('click', (event) => {
 const accordeon = document.querySelectorAll('.accordeon');
 const accordeonTitles = document.querySelectorAll('.accordeon__item-title');
 
-accordeonTitles.forEach.call(accordeonTitles, function(accordeonTitle) {
-  accordeonTitle.addEventListener('click', function() {
-      const currentText = accordeonTitle.parentElement.querySelector('.accordeon__text');
+accordeonTitles.forEach.call(accordeonTitles, function (accordeonTitle) {
+    accordeonTitle.addEventListener('click', function () {
+        const currentText = accordeonTitle.parentElement.querySelector('.accordeon__text');
 
-      accordeonTitle.classList.toggle('accordeon__item-title--active');
-      currentText.classList.toggle('accordeon__text--visible');
+        accordeonTitle.classList.toggle('accordeon__item-title--active');
+        currentText.classList.toggle('accordeon__text--visible');
 
-      if(currentText.classList.contains('accordeon__text--visible')) {
-        currentText.style.maxHeight = currentText.scrollHeight + '40px'
-      } else {
-        currentText.style.maxHeight = null
-      }
+        if (currentText.classList.contains('accordeon__text--visible')) {
+            currentText.style.maxHeight = currentText.scrollHeight + '40px'
+        } else {
+            currentText.style.maxHeight = null
+        }
 
-  });
+    });
 });
 
 // <-- accordeon
+
+const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    slidesPerView: 3,
+    spaceBetween: 30,
+    loop: true,
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
+
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        dynamicBullets: true,
+    },
+
+    breakpoints: {
+        240: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+        },
+        720: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+        },
+        1033: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+        }
+    }
+});

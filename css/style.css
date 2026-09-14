@@ -813,16 +813,14 @@ main .popup {
 
 .reviews__wrapper {
     display: flex;
-    justify-content: space-between;
-    gap: 50px;
+    flex-direction: column;
+    gap: 30px;
 }
 
 .reviews__left {
-    max-width: 400px;
     display: flex;
-    gap: 30px;
-    flex-direction: column;
     justify-content: space-between;
+    gap: 30px;
 }
 
 .reviews__title {
@@ -855,12 +853,6 @@ main .popup {
     transform: translateY(-3px);
 }
 
-.reviews__cards {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 60px;
-}
-
 .reviews__card {
     backdrop-filter: blur(5px);
     display: flex;
@@ -873,7 +865,7 @@ main .popup {
     border-radius: 20px;
     background-color: rgba(255, 255, 255, .08);
 
-    box-shadow: 0 14px 32px rgba(0, 0, 0, .25);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, .25);
     transform: translateY(-2px);
 }
 
@@ -907,32 +899,16 @@ main .popup {
     opacity: 1;
     transform: translateY(0) scale(1);
     filter: blur(0);
-    animation: float 7s ease-in-out infinite;
 }
 
-@keyframes float {
-
-    0% {
-        transform: translateY(0px);
-    }
-
-    50% {
-        transform: translateY(-15px);
-    }
-
-    100% {
-        transform: translateY(0px);
-    }
-
+.swiper {
+    padding: 30px 10px !important;
+    width: 1400px;
+    height: 400px;
+    border-radius: 15px;
 }
 
-.reviews__card:nth-child(2) {
-    animation-delay: .7s;
-}
 
-.reviews__card:nth-child(3) {
-    animation-delay: 1.2s;
-}
 
 /* faq */
 
@@ -1128,13 +1104,11 @@ button.accordeon__item-title.accordeon__item-title--active .accordeon__icon path
 
 
 
-
-
-
-
-
-
-
+@media (max-width: 1470px) {
+    .swiper {
+        width: 1200px;
+    }
+}
 
 @media (max-width: 1270px) {
     .concierge__img {
@@ -1143,6 +1117,14 @@ button.accordeon__item-title.accordeon__item-title--active .accordeon__icon path
 
     .app__btns {
         margin-top: -60px;
+    }
+
+    .swiper {
+        width: 1000px;
+    }
+
+    .reviews__card-text {
+        font-size: 16px;
     }
 }
 
@@ -1180,7 +1162,7 @@ button.accordeon__item-title.accordeon__item-title--active .accordeon__icon path
     }
 }
 
-@media (max-width: 1030px) {
+@media (max-width: 1033px) {
     .categories__card:hover.categories__card img {
         transform: none;
     }
@@ -1188,6 +1170,10 @@ button.accordeon__item-title.accordeon__item-title--active .accordeon__icon path
     .categories__card-name {
         top: 91.5%;
         width: 250px;
+    }
+
+    .swiper {
+        width: 800px;
     }
 }
 
@@ -1317,6 +1303,10 @@ button.accordeon__item-title.accordeon__item-title--active .accordeon__icon path
     .app__btns a:hover {
         transform: translateY(0px);
     }
+
+    .swiper {
+        width: 680px;
+    }
 }
 
 @media (max-width: 720px) {
@@ -1430,6 +1420,15 @@ button.accordeon__item-title.accordeon__item-title--active .accordeon__icon path
     .header__sheet-1 {
         bottom: 33%;
     }
+
+    .swiper {
+        width: 600px;
+        height: 350px;
+    }
+
+    .reviews__card {
+        margin: 0 auto;
+    }
 }
 
 @media (max-width: 640px) {
@@ -1471,7 +1470,6 @@ button.accordeon__item-title.accordeon__item-title--active .accordeon__icon path
         margin-bottom: 60px;
     }
 
-
     .header__logo::after {
         top: -10px;
         right: -30%;
@@ -1488,10 +1486,17 @@ button.accordeon__item-title.accordeon__item-title--active .accordeon__icon path
         top: 5%;
         width: 100px;
     }
+
+    .swiper {
+        width: 480px;
+    }
+
+    .reviews__wrapper {
+        gap: 15px;
+    }
 }
 
 @media (max-width: 520px) {
-
 
     .categories__card-disc {
         font-size: 28px;
@@ -1602,6 +1607,10 @@ button.accordeon__item-title.accordeon__item-title--active .accordeon__icon path
     .header__logo {
         max-width: 250px;
     }
+
+    .swiper {
+        width: 400px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -1659,9 +1668,14 @@ button.accordeon__item-title.accordeon__item-title--active .accordeon__icon path
         padding: 15px;
     }
 
+    .swiper {
+        width: 350px;
+        height: 330px;
+    }
+
 }
 
-@media (max-width: 415px) {
+@media (max-width: 420px) {
     .categories__list {
         gap: 10px;
     }
@@ -1693,5 +1707,10 @@ button.accordeon__item-title.accordeon__item-title--active .accordeon__icon path
 
     .app__btns {
         gap: 20px;
+    }
+
+    .swiper {
+        width: 300px;
+        height: 350px;
     }
 }
