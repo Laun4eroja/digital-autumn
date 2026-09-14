@@ -28,7 +28,8 @@ body {
     color: var(--accent);
     font-weight: 400;
     line-height: 1.2;
-    background-color: #fff;
+    background: linear-gradient(90deg,rgba(0, 166, 235, .1) 0%, rgba(255, 255, 255, 1) 100%);
+    /* background-image: radial-gradient(circle farthest-corner at 70% 30%, #fff, rgba(153, 223, 253, .3)); */
     /* background-color: #f5f7f9; */
 }
 
@@ -271,7 +272,6 @@ main .popup {
 
 .header {
     padding: 50px 0;
-    background-image: radial-gradient(circle farthest-corner at 70% 40%, #fff, rgba(153, 223, 253, .2));
 }
 
 .header__wrapper {
@@ -379,6 +379,10 @@ main .popup {
 }
 
 /* categories */
+
+.categories {
+    padding-top: 40px;
+}
 
 .categories__top {
     display: flex;
@@ -514,10 +518,6 @@ main .popup {
 
 
 /* app */
-
-.app {
-    background-image: radial-gradient(circle farthest-corner at 70% 40%, #fff, rgba(153, 223, 253, .2));
-}
 
 .app__info {
     display: flex;
