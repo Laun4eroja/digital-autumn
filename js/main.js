@@ -127,7 +127,7 @@ const swiper = new Swiper('.swiper', {
     spaceBetween: 30,
     loop: true,
     autoplay: {
-        delay: 2500,
+        delay: 7000,
         disableOnInteraction: false,
     },
 
