@@ -87,6 +87,7 @@ main .popup {
 
 .section {
     padding: 80px 0;
+    scroll-margin-top: -100px;
 }
 
 .hidden {
@@ -1510,6 +1511,7 @@ button.accordeon__item-title.accordeon__item-title--active .accordeon__icon path
     .categories__list-item {
         max-width: 140px;
         font-size: 14px;
+        padding: 13px 0;
     }
 
     .categories__card-disc__tutu {
