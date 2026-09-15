@@ -126,10 +126,10 @@ const swiper = new Swiper('.swiper', {
     slidesPerView: 3,
     spaceBetween: 30,
     loop: true,
-    autoplay: {
-        delay: 7000,
-        disableOnInteraction: false,
-    },
+    // autoplay: {
+    //     delay: 7000,
+    //     disableOnInteraction: false,
+    // },
 
     pagination: {
         el: '.swiper-pagination',

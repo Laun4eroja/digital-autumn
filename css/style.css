@@ -1112,12 +1112,11 @@ button.accordeon__item-title.accordeon__item-title--active .accordeon__icon path
 
 @media (max-width: 1470px) {
     .swiper {
-        width: 1200px;
-        height: 420px;
+        width: 100%;
     }
 
     .reviews__card {
-        height: 300px;
+        height: 275px;
     }
 }
 
@@ -1131,11 +1130,11 @@ button.accordeon__item-title.accordeon__item-title--active .accordeon__icon path
     }
 
     .swiper {
-        width: 1000px;
+        height: 420px;
     }
 
-    .reviews__card-text {
-        font-size: 16px;
+    .reviews__card {
+        height: 300px;
     }
 }
 
@@ -1148,6 +1147,10 @@ button.accordeon__item-title.accordeon__item-title--active .accordeon__icon path
 
     .concierge__img {
         max-width: 500px;
+    }
+
+    .reviews__card-text {
+        font-size: 16px;
     }
 }
 
@@ -1184,12 +1187,11 @@ button.accordeon__item-title.accordeon__item-title--active .accordeon__icon path
     }
 
     .swiper {
-        width: 800px;
-        height: 360px;
+        height: 330px;
     }
 
     .reviews__card {
-        height: 230px;
+        height: 200px;
     }
 }
 
@@ -1265,6 +1267,10 @@ button.accordeon__item-title.accordeon__item-title--active .accordeon__icon path
     .app__image {
         height: 400px;
     }
+
+    .reviews__card-text {
+        font-size: 15px;
+    }
 }
 
 
@@ -1321,15 +1327,11 @@ button.accordeon__item-title.accordeon__item-title--active .accordeon__icon path
     }
 
     .swiper {
-        width: 680px;
+        height: 360px;
     }
 
     .reviews__card {
         height: 250px;
-    }
-
-    .reviews__card-text {
-        font-size: 15px;
     }
 }
 
@@ -1446,12 +1448,12 @@ button.accordeon__item-title.accordeon__item-title--active .accordeon__icon path
     }
 
     .swiper {
-        width: 600px;
         height: 320px;
     }
 
     .reviews__card {
-        margin: 0 auto;
+        margin-left: auto;
+        margin-right: auto;
         height: 200px;
     }
 
@@ -1476,10 +1478,6 @@ button.accordeon__item-title.accordeon__item-title--active .accordeon__icon path
 
     .reviews__cta-text {
         font-size: 18px;
-    }
-
-    .reviews__card-text {
-        font-size: 14px;
     }
 
     .form {
@@ -1514,15 +1512,6 @@ button.accordeon__item-title.accordeon__item-title--active .accordeon__icon path
     .header__sheet-2 {
         top: 5%;
         width: 100px;
-    }
-
-    .swiper {
-        width: 480px;
-
-    }
-
-    .reviews__wrapper {
-        gap: 15px;
     }
 }
 
@@ -1640,11 +1629,19 @@ button.accordeon__item-title.accordeon__item-title--active .accordeon__icon path
     }
 
     .swiper {
-        width: 400px;
+        height: 300px;
+    }
+
+    .reviews__card {
+        height: 180px;
+    }
+
+    .reviews__card-text {
+        font-size: 15px;
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 490px) {
     .title {
         text-align: center;
     }
@@ -1684,6 +1681,10 @@ button.accordeon__item-title.accordeon__item-title--active .accordeon__icon path
         height: 22px;
     }
 
+    .reviews__wrapper {
+        gap: 20px;
+    }
+
     .reviews__left,
     .reviews__cta-text {
         gap: 20px;
@@ -1700,18 +1701,13 @@ button.accordeon__item-title.accordeon__item-title--active .accordeon__icon path
     }
 
     .swiper {
-        width: 390px;
         height: 330px;
     }
 
     .reviews__card {
-        height: 200px;
+        padding: 20px;
+        height: 220px;
     }
-
-    .reviews__card-text {
-        font-size: 14px;
-    }
-
 }
 
 @media (max-width: 420px) {
@@ -1725,10 +1721,6 @@ button.accordeon__item-title.accordeon__item-title--active .accordeon__icon path
 
     .reviews__cards {
         gap: 20px;
-    }
-
-    .reviews__card-text {
-        font-size: 13px;
     }
 
     .popup-content {
@@ -1748,28 +1740,13 @@ button.accordeon__item-title.accordeon__item-title--active .accordeon__icon path
         gap: 20px;
     }
 
-    .swiper {
-        width: 350px;
-        height: 320px;
-    }
-
-    .reviews__card {
-        padding: 20px;
-        height: 200px;
-    }
-
     .reviews__card-text {
         font-size: 14px;
     }
 }
 
-@media (max-width: 400px) {
-    .swiper {
-        width: 300px;
-        height: 350px;
-    }
-
-    .reviews__card {
-        height: 240px;
+@media (max-width: 360px) {
+    .reviews__card-text {
+        font-size: 13px;
     }
 }
